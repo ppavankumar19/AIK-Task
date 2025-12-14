@@ -80,10 +80,20 @@
                     "><div class="absolute inset-0 rounded-full bg-green-600" style="transform: none; transform-origin: 50% 50% 0px; opacity: 1;"></div><span class="relative z-10 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-4 h-4" aria-hidden="true"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>Content</span></button><button class="
                       relative flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap
                       text-gray-400 hover:text-gray-200 hover:bg-white/5
-                    "><span class="relative z-10 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu w-4 h-4" aria-hidden="true"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg><a href="https://stack-visualizer-wheat.vercel.app/">Simulator</a></span></button><button class="
-                      relative flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap
-                      text-gray-400 hover:text-gray-200 hover:bg-white/5
-                    "><span class="relative z-10 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-4 h-4" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>Flash Cards</span></button><button class="
+                    "><span class="relative z-10 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu w-4 h-4" aria-hidden="true"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg><a href="https://stack-visualizer-wheat.vercel.app/">Simulator</a></span></button><button onclick="showFlashCards()" class="
+  relative flex items-center px-4 py-2 rounded-full text-sm font-medium
+  transition-all duration-200 whitespace-nowrap cursor-pointer
+  text-gray-400 hover:text-gray-200 hover:bg-white/5
+" id="flashCardsBtn">
+  <span class="relative z-10 flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-4 h-4">
+      <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+      <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+      <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+    </svg>
+    Flash Cards
+  </span>
+</button><button class="
                       relative flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap
                       text-gray-400 hover:text-gray-200 hover:bg-white/5
                     "><span class="relative z-10 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-cw w-4 h-4" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>Practice</span></button><button class="
@@ -161,7 +171,7 @@
                         "><div class="flex items-start gap-3"><div class="
                             flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold
                             bg-white/10 text-gray-400
-                          ">3</div><div class="flex-1 min-w-0"><h3 class="text-sm font-medium mb-1 text-gray-300">Story of Ayurveda</h3><p class="text-xs text-gray-500 line-clamp-2">Emergence of Dhanavantari Permuan</p></div></div></button><button class="
+                          ">3</div><div class="flex-1 min-w-0"><h3 class="text-sm font-medium mb-1 text-gray-300">Story of Ayurveda</h3><p class="text-xs text-gray-500 line-clamp-2">Emergence of Dhanavantari Permuan</p></div></div></button><button class=" 
                           w-full text-left p-3 rounded-xl transition-all duration-200 group relative overflow-hidden
                           bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20
                         "><div class="flex items-start gap-3"><div class="
@@ -203,188 +213,308 @@
                         "><div class="flex items-start gap-3"><div class="
                             flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold
                             bg-white/10 text-gray-400
-                          ">10</div><div class="flex-1 min-w-0"><h3 class="text-sm font-medium mb-1 text-gray-300">Dinacharya</h3><p class="text-xs text-gray-500 line-clamp-2">Daily Routine</p></div></div></button></div></aside><div class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 pt-8 pb-24 lg:pb-12"><div class="h-full" style="opacity: 1; transform: none;"><div class="max-w-3xl mx-auto select-none"><style>
+                          ">10</div><div class="flex-1 min-w-0"><h3 class="text-sm font-medium mb-1 text-gray-300">Dinacharya</h3><p class="text-xs text-gray-500 line-clamp-2">Daily Routine</p></div></div></button></div></aside><div class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 pt-8 pb-24 lg:pb-12">
+  <div class="h-full" style="opacity: 1; transform: none;">
+    
+    <!-- Flash Cards Section (Hidden by default) -->
+    <div id="flashCardsSection" class="hidden">
+      <div class="flex flex-col items-center justify-center min-h-[80vh] space-y-8">
+        
+        <!-- Header -->
+        <div class="w-full max-w-4xl flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-bold text-white">Review Concepts</h2>
+          <div class="text-slate-400 text-lg">
+            <span id="currentCardNum">1</span> / <span id="totalCardsNum">10</span>
+          </div>
+        </div>
+
+        <!-- Flash Card Container -->
+        <div class="w-full max-w-4xl">
+          <div onclick="flipFlashCard()" class="relative cursor-pointer" style="perspective: 1000px; height: 500px;">
+            <div id="flashCard" class="absolute inset-0 transition-all duration-500" style="transform-style: preserve-3d;">
+              
+              <!-- Front of Card -->
+          <div id="cardFront" class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-800 rounded-3xl p-12 flex flex-col items-center justify-center shadow-2xl" style="backface-visibility: hidden;">
+            <div class="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mb-8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400">
+                <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+                <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+              </svg>
+            </div>
+            <h3 id="questionText" class="text-3xl font-bold text-white text-center mb-12">What does LIFO stand for?</h3>
+                <div class="flex items-center gap-2 text-slate-400 text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path>
+                    <path d="M21 3v5h-5"></path>
+                  </svg>
+                  <span>TAP TO FLIP</span>
+                </div>
+              </div>
+
+          <!-- Back of Card -->
+          <div id="cardBack" class="absolute inset-0 bg-gradient-to-br from-green-800 to-green-950 rounded-3xl p-12 flex flex-col items-center justify-center shadow-2xl" style="backface-visibility: hidden; transform: rotateY(180deg);">
+            <div class="absolute top-8 left-0 right-0 text-center">
+              <span class="text-sm font-bold text-green-300 tracking-widest uppercase">DEFINITION</span>
+            </div>
+            <p id="answerText" class="text-xl text-white text-center leading-relaxed">Last In First Out - the fundamental principle where the last element added is the first one removed</p>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="w-full max-w-4xl flex items-center justify-center gap-8 mt-8">
+          <!-- Previous Button -->
+          <button id="prevCardBtn" onclick="previousFlashCard()" class="w-14 h-14 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-all disabled:opacity-30 disabled:cursor-not-allowed border border-slate-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6"></path>
+            </svg>
+          </button>
+
+          <!-- Progress Bar -->
+          <div class="flex-1 max-w-md">
+            <div class="h-2 bg-slate-800 rounded-full overflow-hidden">
+              <div id="flashProgress" class="h-full bg-green-500 transition-all duration-300" style="width: 10%"></div>
+            </div>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextCardBtn" onclick="nextFlashCard()" class="w-14 h-14 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-all disabled:opacity-30 disabled:cursor-not-allowed border border-slate-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Original Content Section -->
+    <div id="contentSection" class="max-w-3xl mx-auto select-none">
+      <style>
         .rich-content h1 { font-size: 2.25rem; font-weight: 700; color: white; margin-bottom: 2rem; }
         .rich-content h2 { font-size: 1.875rem; font-weight: 600; color: white; margin-top: 2.5rem; margin-bottom: 1.5rem; }
         .rich-content h3 { font-size: 1.25rem; font-weight: 500; color: #cffafe; margin-top: 2rem; margin-bottom: 1rem; }
         .rich-content strong { color: #86efac; font-weight: 600; }
-        .rich-content blockquote { 
-          border-left: 4px solid #22c55e; 
-          padding-left: 1rem; 
-          font-style: italic; 
-          color: #9ca3af; 
-          margin: 1.5rem 0; 
-          background-color: rgba(255, 255, 255, 0.05); 
-          padding: 1rem; 
-          border-radius: 0 0.5rem 0.5rem 0; 
-        }
+        .rich-content blockquote { border-left: 4px solid #22c55e; padding-left: 1rem; font-style: italic; color: #9ca3af; margin: 1.5rem 0; background-color: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 0 0.5rem 0.5rem 0; }
         .rich-content ul { list-style-type: none; margin: 1.5rem 0; padding-left: 0; }
-        .rich-content ul li { 
-          position: relative; 
-          padding-left: 1.5rem; 
-          margin-bottom: 0.75rem; 
-          color: #d1d5db; 
-        }
-        .rich-content ul li::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0.6rem;
-          width: 0.375rem;
-          height: 0.375rem;
-          border-radius: 50%;
-          background-color: #4ade80;
-        }
+        .rich-content ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #d1d5db; }
+        .rich-content ul li::before { content: ''; position: absolute; left: 0; top: 0.6rem; width: 0.375rem; height: 0.375rem; border-radius: 50%; background-color: #4ade80; }
         .rich-content ol { list-style-type: none; margin: 1.5rem 0; padding-left: 0; color: #d1d5db; }
-        .rich-content ol li { 
-          position: relative; 
-          padding-left: 1.5rem; 
-          margin-bottom: 0.75rem; 
-          color: #d1d5db; 
-        }
-        .rich-content ol li::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0.6rem;
-          width: 0.375rem;
-          height: 0.375rem;
-          border-radius: 50%;
-          background-color: #4ade80;
-        }
+        .rich-content ol li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #d1d5db; }
+        .rich-content ol li::before { content: ''; position: absolute; left: 0; top: 0.6rem; width: 0.375rem; height: 0.375rem; border-radius: 50%; background-color: #4ade80; }
         .rich-content p { margin-bottom: 1rem; line-height: 1.75; color: #d1d5db; font-weight: 300; }
         .rich-content a { color: #22d3ee; text-decoration: underline; }
+        .rich-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; color: #ffffff; border: 1px solid #ffffff !important; }
+        .rich-content td, .rich-content th { border: 1px solid #ffffff !important; padding: 0.75rem; text-align: left; color: #ffffff; }
+        .rich-content th { background-color: rgba(255, 255, 255, 0.1); font-weight: 600; color: white; }
+        .rich-content img { max-width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .rich-content img:not([style*="float"]) { display: block; margin: 1.5rem auto; }
+        .rich-content img[style*="float: left"] { margin: 0 1.5rem 1rem 0; }
+        .rich-content img[style*="float: right"] { margin: 0 0 1rem 1.5rem; }
+      </style>
+      <div class="rich-content">
+        <h1>What is a Stack?</h1>
+        <p>A stack is a linear data structure. It means it sequentially stores data. Stacks are simple enough for beginners, yet they appear EVERYWHERE. A Stack is a collection of elements that allows insertion and deletion only from one end, called the top of the stack.</p>
+        <!-- Rest of your content... keep everything exactly as it was -->
         
+        <h1>Analogy</h1>
+        <p>A stack is like a pile of plates. You can add a plate only on top. You can remove a plate only from the top. You cannot take a plate from the middle or the bottom. this principle is called as LIFO - Last in First Out in stacks. The last thing you put in is the first thing you take out.</p>
         
-        /* Table Styles - Comprehensive coverage for all table types */
-        .rich-content table { 
-          width: 100%; 
-          border-collapse: collapse; 
-          margin: 1rem 0; 
-          color: #ffffff;
-          border: 1px solid #ffffff !important;
-        }
-        .rich-content td, .rich-content th { 
-          border: 1px solid #ffffff !important;
-          padding: 0.75rem; 
-          text-align: left; 
-          color: #ffffff;
-        }
-        .rich-content th { 
-          background-color: rgba(255, 255, 255, 0.1); 
-          font-weight: 600; 
-          color: white; 
-        }
-        /* Better-table specific styles */
-        .rich-content .ql-table-col {
-          border: 1px solid #ffffff !important;
-        }
-        .rich-content .quill-better-table {
-          border: 1px solid #ffffff !important;
-        }
-        .rich-content .quill-better-table-cell {
-          border: 1px solid #ffffff !important;
-          padding: 0.75rem !important;
-          color: #ffffff !important;
-        }
-        .rich-content .quill-better-table-wrapper {
-          margin: 1rem 0;
-        }
-        .rich-content tbody {
-          border: 1px solid #ffffff !important;
-        }
-        /* Ensure table cells have proper display */
-        .rich-content .quill-better-table-cell p {
-          margin: 0;
-          color: #ffffff;
-        }
+        <h2>Why it is needed?</h2>
+        <p>Stacks help us keep track of things in order, Go back to previous steps (undo actions) in editors, Evaluate mathematical expressions like infix to postfix and calculators, Manage function calls inside programs, Browser forward and backward buttons. It makes storing and removing items simple and organized.</p>
+        
+        <h2>Basic Operations:</h2>
+        <p>Stacks always allow operations from one side only -- the top. Stack generally implemented using Arrays.</p>
+        <p>Push: "Add an element to the top." Check if stack is full Put the new item on top Increase top position.</p>
+        <p>Pop: "Remove the top element." Check if stack is empty Take the top item out Reduce top position.</p>
+        
+        <h2>Peek / Pop:</h2>
+        <p>View the element at the top without removing it.</p>
+        
+        <h2>Other operations include:</h2>
+        <p>isEmpty() Check if stack is empty</p>
+        <p>isFull() Check if stack is full</p>
+        
+        <h2>Examples:</h2>
+        <p>Push (Add an element) Adds an item to the top of the stack. Example: Stack = [10, 20], Push(30) → [10, 20, 30]</p>
+        <p>Pop (Remove the top element) Removes the item from the top. Example: [10, 20, 30], Pop() → returns 30, new stack = [10, 20]</p>
+        <p>Peek or Top (View top element) Shows the value at the top without removing it. Example: Top of [10, 20, 30] → 30</p>
+        
+        <h2>Errors:</h2>
+        <p>Stack Overflow: If top reaches the maximum allowed index and you try to push → overflow.</p>
+        <p>Stack Underflow: If top = -1 and you try to pop → underflow.</p>
+        <p>isEmpty (Check if stack is empty) Returns true if the stack has no elements; otherwise false. Example: [] → isEmpty = true</p>
+        <p>These conditions MUST be checked.</p>
+        
+        <h2>Disadvantages:</h2>
+        <ol>
+          <li>Only the top element is directly accessible.</li>
+          <li>Not suitable for random access or traversal.</li>
+          <li>In manual array implementations, overflow/underflow errors can occur.</li>
+        </ol>
+        
+        <h2>Common Mistakes</h2>
+        <ol>
+          <li>Trying to pop from an empty stack.</li>
+          <li>forgetting that stack works only from top.</li>
+          <li>Mixing up LIFO with FIFO (FIFO is for queues, not stacks)</li>
+          <li>Assuming stack can remove items from the middle (it cannot)</li>
+        </ol>
+        
+        <h2>Summary</h2>
+        <p>A stack stores items in a LIFO manner. You can only add (push) and remove (pop) from the top. Used in undo operations, browsing history, expression evaluation, and function calls. Important operations: push, pop, peek, isEmpty. Very simple structure but extremely powerful in computing.</p>
+      </div>
+    </div>
 
-        /* Image Styles */
-        .rich-content img { 
-          max-width: 100%; 
-          height: auto; 
-          border-radius: 0.5rem; 
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
-        }
-        /* Only apply block/center if NOT floated */
-        .rich-content img:not([style*="float"]) {
-          display: block;
-          margin: 1.5rem auto;
-        }
-        /* Add margin for floated images */
-        .rich-content img[style*="float: left"] {
-          margin: 0 1.5rem 1rem 0;
-        }
-        .rich-content img[style*="float: right"] {
-          margin: 0 0 1rem 1.5rem;
-        }
-      </style><div class="rich-content"><h1>What is a Stack?</h1><p>A stack is a linear data structure. It means it sequentially stores data. Stacks are simple enough for beginners, yet they appear EVERYWHERE. A Stack is a collection of elements that allows insertion and deletion only from one end, called the top of the stack.
-</p>
-<h1>Analogy</h1><p> A stack is like a pile of plates.
-    
-You can add a plate only on top. You can remove a plate only from the top. You cannot take a plate from the middle or the bottom.
-this principle is called as LIFO - Last in First Out in stacks. The last thing you put in is the first thing you take out.
-</p><h2>Why it is needed?
-</h2><p>Stacks help us keep track of things in order, Go back to previous steps (undo actions) in editors, Evaluate mathematical expressions like infix to postfix and calculators, Manage function calls inside programs, Browser forward and backward buttons.
-It makes storing and removing items simple and organized.</p>
-<h2>Basic Operations: </h2><p>Stacks always allow operations from one side only – the top. Stack generally implemented using Arrays.
-</p>
-<p>Push: "Add an element to the top."
-      Check if stack is full
-      Put the new item on top
-      Increase top position. 
-</p>
-<p>Pop: "Remove the top element."
-     Check if stack is empty
-     Take the top item out
-     Reduce top position.
-</p>
-<h2>Peek / Pop:</h2><p>View the element at the top without removing it.</p><h2>Other operations include :</h2>
-<p>isEmpty()	Check if stack is empty</p>
-<p>isFull()	Check if stack is full</p><h2>Examples: </h2><p>Push (Add an element)
-Adds an item to the top of the stack.
-Example: Stack = [10, 20], Push(30) → [10, 20, 30]
-</p>
+  </div>
+</div></div><div class="lg:hidden fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-xl border-t border-white/10 z-40 safe-area-inset-bottom"><div class="flex items-center justify-center p-3"><button class="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-5 h-5 text-white" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span class="text-sm text-white font-medium">Course Topics</span></button></div></div></div></main><footer class="relative bg-slate-900/80 backdrop-blur-md border-t border-white/10 py-4 mt-8 z-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center text-sm text-gray-400"><p class="mb-1">© 2025 Anaadi Foundation. All rights reserved.</p><p class="text-xs text-gray-500">Beta Version - For feedback, please email <a href="mailto:manjukesh@anaadi.org" class="text-blue-400 hover:text-blue-300 transition-colors underline">manjukesh@anaadi.org</a></p></div></div></footer></div></div>
+<script>
+// Flash Cards Data
+const flashCardsData = [
+  {
+    question: "What does LIFO stand for?",
+    answer: "Last In First Out - the fundamental principle where the last element added is the first one removed"
+  },
+  {
+    question: "What are the two main stack operations?",
+    answer: "Push (add element to top) and Pop (remove element from top)"
+  },
+  {
+    question: "What is Stack Overflow?",
+    answer: "An error that occurs when trying to push an element onto a full stack"
+  },
+  {
+    question: "What is Stack Underflow?",
+    answer: "An error that occurs when trying to pop an element from an empty stack"
+  },
+  {
+    question: "What does the Peek operation do?",
+    answer: "Returns the top element without removing it from the stack"
+  },
+  {
+    question: "Give a real-world analogy for a stack",
+    answer: "A pile of plates - you can only add or remove plates from the top"
+  },
+  {
+    question: "What is the time complexity of Push and Pop?",
+    answer: "O(1) - constant time for both operations"
+  },
+  {
+    question: "Name 3 applications of stacks",
+    answer: "1) Undo/Redo operations\n2) Browser history (back button)\n3) Expression evaluation\n4) Function call management"
+  },
+  {
+    question: "Can you access the middle element of a stack directly?",
+    answer: "No - stacks only allow access to the top element. You must pop elements to reach lower ones."
+  },
+  {
+    question: "What is the main disadvantage of stacks?",
+    answer: "Limited access - only the top element can be accessed directly, no random access allowed"
+  }
+];
 
-<p>
-Pop (Remove the top element)
-Removes the item from the top.
-Example: [10, 20, 30], Pop() → returns 30, new stack = [10, 20]
-</p>
+// State
+let currentFlashCard = 0;
+let isFlashCardFlipped = false;
 
-<p>
-Peek or Top (View top element)
-Shows the value at the top without removing it.
-Example: Top of [10, 20, 30] → 30
-</p><h2>Errors: </h2>
-<p>
-Stack Overflow: If top reaches the maximum allowed index and you try to push → overflow.
-</p>
-<p>
-Stack Underflow : 
-If top = -1 and you try to pop → underflow. 
-</p>
+// Show Flash Cards
+function showFlashCards() {
+  document.getElementById('contentSection').classList.add('hidden');
+  document.getElementById('flashCardsSection').classList.remove('hidden');
+  
+  // Update button styling
+  const buttons = document.querySelectorAll('.bg-slate-900\\/50 button');
+  buttons.forEach(btn => {
+    btn.classList.remove('text-white');
+    btn.classList.add('text-gray-400', 'hover:text-gray-200', 'hover:bg-white/5');
+    const bg = btn.querySelector('.bg-green-600');
+    if (bg) bg.remove();
+  });
+  
+  const flashBtn = document.getElementById('flashCardsBtn');
+  flashBtn.classList.remove('text-gray-400', 'hover:text-gray-200', 'hover:bg-white/5');
+  flashBtn.classList.add('text-white');
+  
+  const bgDiv = document.createElement('div');
+  bgDiv.className = 'absolute inset-0 rounded-full bg-green-600';
+  bgDiv.style.transform = 'none';
+  bgDiv.style.transformOrigin = '50% 50% 0px';
+  bgDiv.style.opacity = '1';
+  flashBtn.insertBefore(bgDiv, flashBtn.firstChild);
+  
+  loadFlashCard(0);
+}
 
-<p>
-isEmpty (Check if stack is empty)
-Returns true if the stack has no elements; otherwise false.
-Example: [] → isEmpty = true
-</p>
+// Show Content
+function showContent() {
+  document.getElementById('flashCardsSection').classList.add('hidden');
+  document.getElementById('contentSection').classList.remove('hidden');
+}
 
-<p>
-These conditions MUST be checked.
-</p>
+// Load specific flash card
+function loadFlashCard(index) {
+  currentFlashCard = index;
+  isFlashCardFlipped = false;
+  
+  const card = flashCardsData[index];
+  document.getElementById('questionText').textContent = card.question;
+  document.getElementById('answerText').textContent = card.answer;
+  document.getElementById('currentCardNum').textContent = index + 1;
+  document.getElementById('totalCardsNum').textContent = flashCardsData.length;
+  
+  // Reset flip
+  document.getElementById('flashCard').style.transform = 'rotateY(0deg)';
+  
+  // Update buttons
+  document.getElementById('prevCardBtn').disabled = (index === 0);
+  document.getElementById('nextCardBtn').disabled = (index === flashCardsData.length - 1);
+  
+  // Update progress
+  const progress = ((index + 1) / flashCardsData.length) * 100;
+  document.getElementById('flashProgress').style.width = progress + '%';
+}
 
-<h2>Disadvantages: </h2>
-<ol><li data-list="ordered"><span class="ql-ui" contenteditable="false"></span>Only the top element is directly accessible.
-</li><li data-list="ordered"><span class="ql-ui" contenteditable="false"></span>Not suitable for random access or traversal.</li><li data-list="ordered"><span class="ql-ui" contenteditable="false"></span>In manual array implementations, overflow/underflow errors can
-occur.</li></ol><h2>Common Mistakes</h2><ol><li data-list="ordered"><span class="ql-ui" contenteditable="false"></span>Trying to pop from an empty stack.
-</li><li data-list="ordered"><span class="ql-ui" contenteditable="false"></span>forgetting that stack works only from top.</li><li data-list="ordered"><span class="ql-ui" contenteditable="false"></span>Mixing up LIFO with FIFO (FIFO is for queues, not stacks)</li>
-<li data-list="ordered"><span class="ql-ui" contenteditable="false"></span>Assuming stack can remove items from the middle (it cannot)</li></ol>
-<h2>Summary</h2><p>A stack stores items in a LIFO manner. You can only add (push) and remove (pop) from the top.
-Used in undo operations, browsing history, expression evaluation, and function calls.
-Important operations: push, pop, peek, isEmpty.
-Very simple structure but extremely powerful in computing.</p></div></div></div></div></div><div class="lg:hidden fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-xl border-t border-white/10 z-40 safe-area-inset-bottom"><div class="flex items-center justify-center p-3"><button class="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-5 h-5 text-white" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span class="text-sm text-white font-medium">Course Topics</span></button></div></div></div></main><footer class="relative bg-slate-900/80 backdrop-blur-md border-t border-white/10 py-4 mt-8 z-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center text-sm text-gray-400"><p class="mb-1">© 2025 Anaadi Foundation. All rights reserved.</p><p class="text-xs text-gray-500">Beta Version - For feedback, please email <a href="mailto:manjukesh@anaadi.org" class="text-blue-400 hover:text-blue-300 transition-colors underline">manjukesh@anaadi.org</a></p></div></div></footer></div></div>
-<!-- Cloudflare Pages Analytics --><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;a2faa0cc3e65480bba7c939cfed83f02&quot;}"></script><!-- Cloudflare Pages Analytics -->
+// Flip card
+function flipFlashCard() {
+  isFlashCardFlipped = !isFlashCardFlipped;
+  const card = document.getElementById('flashCard');
+  card.style.transform = isFlashCardFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+}
+
+// Next card
+function nextFlashCard() {
+  if (currentFlashCard < flashCardsData.length - 1) {
+    loadFlashCard(currentFlashCard + 1);
+  }
+}
+
+// Previous card
+function previousFlashCard() {
+  if (currentFlashCard > 0) {
+    loadFlashCard(currentFlashCard - 1);
+  }
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  const flashSection = document.getElementById('flashCardsSection');
+  if (!flashSection.classList.contains('hidden')) {
+    if (e.key === 'ArrowLeft') previousFlashCard();
+    if (e.key === 'ArrowRight') nextFlashCard();
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      flipFlashCard();
+    }
+  }
+});
+
+// Make Content button work
+const contentBtn = document.querySelector('.lucide-book-open').closest('button');
+if (contentBtn) {
+  contentBtn.onclick = showContent;
+}
+</script><!-- Cloudflare Pages Analytics --><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;a2faa0cc3e65480bba7c939cfed83f02&quot;}"></script><!-- Cloudflare Pages Analytics -->
 
 </body></html>
