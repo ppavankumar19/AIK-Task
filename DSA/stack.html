@@ -451,6 +451,29 @@ function showFlashCards() {
 function showContent() {
   document.getElementById('flashCardsSection').classList.add('hidden');
   document.getElementById('contentSection').classList.remove('hidden');
+  
+  // Update button styling - remove active state from all buttons
+  const buttons = document.querySelectorAll('.bg-slate-900\\/50 button');
+  buttons.forEach(btn => {
+    btn.classList.remove('text-white');
+    btn.classList.add('text-gray-400', 'hover:text-gray-200', 'hover:bg-white/5');
+    const bg = btn.querySelector('.bg-green-600');
+    if (bg) bg.remove();
+  });
+  
+  // Add active state to Content button
+  const contentBtn = document.querySelector('.lucide-book-open').closest('button');
+  if (contentBtn) {
+    contentBtn.classList.remove('text-gray-400', 'hover:text-gray-200', 'hover:bg-white/5');
+    contentBtn.classList.add('text-white');
+    
+    const bgDiv = document.createElement('div');
+    bgDiv.className = 'absolute inset-0 rounded-full bg-green-600';
+    bgDiv.style.transform = 'none';
+    bgDiv.style.transformOrigin = '50% 50% 0px';
+    bgDiv.style.opacity = '1';
+    contentBtn.insertBefore(bgDiv, contentBtn.firstChild);
+  }
 }
 
 // Load specific flash card
